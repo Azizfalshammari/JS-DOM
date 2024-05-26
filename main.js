@@ -25,47 +25,17 @@ console.log(ul2BDOM);
 
 
 
-let table = document.createElement('table');
-document.appendChild(table);
-
-
-
-table.innerHTML(`
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-`)
 
 
 
 
 
 
-
-
-
-let square1 = document.getElementsByClassName('square')[0];
-var randomColor = Math.floor(Math.random()*16777215).toString(16);
-
+    let square1 = document.getElementsByClassName('square')[0];
+    
+console.log('1')
 function change()  {
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
     square1.style.backgroundColor = '#' +randomColor;
     
     console.log(square1.style.top= Math.floor(Math.random() * 101) +'px')
@@ -73,3 +43,4 @@ function change()  {
     console.log('change is good')
 };
 setInterval(change, 3000);
+
