@@ -62,10 +62,10 @@ table.innerHTML(`
 
 
 
+let square1 = document.getElementsByClassName('square')[0];
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
 
 function change()  {
-    let square1 = document.getElementsByClassName('square')[0];
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
     square1.style.backgroundColor = '#' +randomColor;
     
     console.log(square1.style.top= Math.floor(Math.random() * 101) +'px')
