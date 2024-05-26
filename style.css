@@ -1,0 +1,16 @@
+.pStyle {
+    font-weight: bold;
+    color: aqua;
+    background-color: red;
+}
+
+
+
+.li {
+    color:red;
+    border: solid blue;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    gap: 2rem;
+}
